@@ -1,9 +1,13 @@
 body {
-  background-color: #f7f7f7;
+  background-color: #252525;
   font-family: Arial, Helvetica, sans-serif;
   display: grid;
-
+  gap: 20px;
+  margin-top: 60px;
+  justify-items: center;
+  
 }
+
 .flex {
   display: flex;
   justify-content: center;
@@ -13,8 +17,7 @@ body {
 
 .grid {
   display: grid;
-  justify-content: center;
-
+  
 }
 a {
   padding: 10px 20px;
@@ -24,30 +27,61 @@ a {
   border-radius: 4px;
 }
 .mapa{
+ 
     display: grid;
     grid-template-columns: 1fr 1FR;
+    max-width: 1000px;
 }
 .botao{
    background-color: red; 
    justify-self: end;
+
 }
 .imagem{
     max-width: 100%;
+    display: block;
+}
+h1{
+  margin: 0px;
 }
 .info{
     display: grid;
     background-color: black;
     text-align: right;
-    padding: 20px;
+    align-content: center;
+    padding: 40px;
+    justify-items: end;
+    color: white;
 }
 .vantagens{
     background-color: black;
     padding: 20px;
-    text-align: left;
+  }
+  .vantagens-items{
+    display: grid;
+    color: white;
+    grid-template-columns: auto 1fr;
+    gap: 1px 20px;
+    align-items: center;
+  }
+  .vantagens-items p{
+  margin: 0px;
+  grid-column: 2;
 }
 .subtitulo{
     display: grid;
     font-size: 40px;
     place-self: center;
-    color: rgba(0, 0, 0, 0.253);
+    color: rgba(0, 0, 0, 0.336);
+    text-align: right;
+    margin: 20px;
+}
+.rodape{
+  background-color: rgba(0, 0, 0, 0.24);
+  width: 100%;
+  text-align: center;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  margin-top: 0px;
+  
 }
